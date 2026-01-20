@@ -7,9 +7,9 @@ MithrilToolbox is a work-in-progress CLI tool made for processing files from the
 ```
 MithrilToolbox.exe <verb> -arg1 param1 -arg2 param2
 ```
-
-These are the verbs that can be used with the program:
-
+<details>
+<summary>Available verbs</summary>
+  
 ```
 compress       Compresses a file using ZLIB
 
@@ -49,6 +49,7 @@ tex-export     Converts a texture (TEX) file to DDS
 
 tex-import     Converts a DDS file to texture (TEX)
 ```
+</details>
 
 ## Supported filetypes
 
