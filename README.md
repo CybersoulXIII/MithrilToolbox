@@ -2,6 +2,54 @@
 
 MithrilToolbox is a work-in-progress CLI tool made for processing files from the game World of Final Fantasy. While this tool was made with this specific game in mind, it may also work with other games made with the same engine (Silicon Studio's Orochi Engine 3).
 
+## Usage
+
+```
+MithrilToolbox.exe <verb> -arg1 param1 -arg2 param2
+```
+
+These are the verbs that can be used with the program:
+
+```
+compress       Compresses a file using ZLIB
+
+decompress     Decompresses a file using ZLIB
+
+dat-unpack     Unpacks an Archived File (DAT) file
+
+cms-export     Converts a Collision Mesh (CMS) file to GLTF
+
+cms-import     Converts a GLTF file to Collision Mesh (CMS)
+
+crv-export     Converts a Curve (CRV) file to JSON
+
+crv-import     Converts a JSON file to Curve (CRV)
+
+csd-export     Converts a Character Set (CSD) file to JSON
+
+csd-import     Converts a JSON file to Character Set (CSD)
+
+csh-export     Converts a Cell Sheet (CSH) file to CSV
+
+csh-import     Converts a CSV file to Cell Sheet (CSH)
+
+mdc-export     Converts a Model Configuration (MDC) file to JSON
+
+mdc-import     Converts a JSON file to Model Configuration (MDC)
+
+mdl-export     Converts a Model (MDL) file to GLB/GLTF
+
+mdl-import     Converts a GLB/GLTF file to Model (MDL)
+
+rail-export    Converts a Rail file to JSON
+
+rail-import    Converts a JSON file to Rail
+
+tex-export     Converts a texture (TEX) file to DDS
+
+tex-import     Converts a DDS file to texture (TEX)
+```
+
 ## Supported filetypes
 
 These are the currently supported (totally or partially) filetypes:
