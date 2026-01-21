@@ -1,6 +1,8 @@
-# MithrilToolbox
+# Mithril Toolbox
 
-MithrilToolbox is a work-in-progress CLI tool made for processing files from the game World of Final Fantasy. While this tool was made with this specific game in mind, it may also work with other games made with the same engine (Silicon Studio's Orochi Engine 3).
+Mithril Toolbox is a work-in-progress CLI tool made for processing files from the game World of Final Fantasy. While this tool was made with this specific game in mind, it may also work with other games made with the same engine (Silicon Studio's Orochi Engine 3).
+
+This README provides a brief introduction to the tool usage and the supported filetypes; for more detailed information, proceed to the [Wiki](https://github.com/CybersoulXIII/MithrilToolbox/wiki) section of this repository.
 
 ## Usage
 
