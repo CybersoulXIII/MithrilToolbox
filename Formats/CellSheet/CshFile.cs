@@ -190,9 +190,9 @@ public class CshFile
                         WriteNullTerminatedString(writer, cellValue);
                         int cellSize = cell.SizeMultiplier * 4;
                         byte[] valueArray = System.Text.Encoding.UTF8.GetBytes(cellValue);
-                        //writer.Write(valueArray);
+
                         int padding = cellSize - (valueArray.Length + 1);
-                        //int padding = cellSize - valueArray.Length;
+ 
                         if (padding > 0)
                         {
                             writer.Write(new byte[padding]);
@@ -207,7 +207,12 @@ public class CshFile
                         writer.Write(ReverseEndianness(int.Parse(cellValue)));
                         break;
                     case DataType.Float:
-                        float value = ReverseEndianness(int.Parse(cellValue));
+                        float parsed = float.Parse(cellValue);
+                        
+                        int bits = BitConverter.SingleToInt32Bits(parsed);
+                        bits = ReverseEndianness(bits);
+                        float value = BitConverter.Int32BitsToSingle(bits);
+
                         writer.Write(value);
                         break;
                 }
